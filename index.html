@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+
+<head>
+    <title>Student Enrollment Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center">Student Enrollment Form using Json PowerDB API</h2>
+        <form id="stuForm" method="post">
+            <div class="form-group">
+                <label for="rollno">Roll No:</label>
+                <input  type="text" class="form-control" id="rollno" placeholder="Enter Roll Number" name="rollno" required>
+            </div>
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" class="form-control" id="fullname" placeholder="Enter Full Name" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="class">Class:</label>
+                <input type="text" class="form-control" id="class" placeholder="Enter Class"
+                    name="class" required list="classes" >
+                <datalist id="classes">
+                    <option value="Play"></option>
+                    <option value="Nursery"></option>
+                    <option value="KG"></option>
+                    <option value="I"></option>
+                    <option value="II"></option>
+                    <option value="III"></option>
+                    <option value="IV"></option>
+                    <option value="V"></option>
+                    <option value="VI"></option>
+                    <option value="VII"></option>
+                    <option value="VIII"></option>
+                    <option value="IX"></option>
+                    <option value="X"></option>
+                    <option value="XI"></option>
+                    <option value="XII"></option>
+                </datalist>
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Birth Date:</label>
+                <input type="date" class="form-control" id="birthdate" placeholder="Enter Birth Date"
+                    name="birthdate" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea class="form-control" name="address" id="address" cols="30" rows="10" placeholder="Enter Address" required></textarea>
+                
+            </div>
+            <div class="form-group">
+                <label for="enrollmentdate">Enrollment Date:</label>
+                <input type="date" class="form-control" id="enrollmentdate" placeholder="Enter Enrollment Date"
+                    name="enrollmentdate" required>
+            </div>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <div class="btn-group-lg">
+                    <input type="button" class="btn btn-primary" id="stuSave" value="Save" onclick="saveEmployee()" >
+                    <input type="button" class="btn btn-primary" id="stuChange" value="Change" onclick="changeEmployee()" >
+                    <input type="button" class="btn btn-primary" id="stuReset" value="Reset" onclick="" >
+    
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" language="javascript" src="js/app.js"></script>
+    <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    
+</body>
+
+</html>

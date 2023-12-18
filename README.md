@@ -13,3 +13,10 @@
 - Creates DB on run time.
 - Stores Data in pre-defined DB and Relation, if DB name and Relation name is not provided.
 
+# Release History
+
+| Version | Release Date | Release Notes |
+|---------|--------------|---------------|
+| v1.0.0  | 2023-12-18   | [JSON Power DB code with Student Enrollment Form initial Release](https://github.com/20AbhishekRoka02/login2explore-MicroProject-by-Abhishek-Roka/releases/tag/JPDB)|
+
+
